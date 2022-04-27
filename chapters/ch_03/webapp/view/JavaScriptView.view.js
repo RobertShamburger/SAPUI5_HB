@@ -9,7 +9,7 @@ sap.ui.define([
             return "sap.ui.demo.ch_03.controller.JavaScriptView";
         },
         createContent: function (oController) {
-            var oLabel = new Labeln();
+            var oLabel = new Label();
             oLabel.setText("Hallo JavaScript");
             return oLabel;
         }
