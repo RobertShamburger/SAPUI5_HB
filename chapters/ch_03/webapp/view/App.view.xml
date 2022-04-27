@@ -3,5 +3,6 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 >
-<Label text="Please, come on mang!!" />
+	<Label text="Please, come on mang!!"/>
+	<mvc:JSView viewName="sap.ui.demo.ch_03.view.JavaScriptView"/>
 </mvc:View>
