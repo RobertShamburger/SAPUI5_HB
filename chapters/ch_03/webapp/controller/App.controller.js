@@ -13,6 +13,6 @@ sap.ui.define([
 				var oData = models.createDataModel();
 				this.getView().setModel(oData);
 			}
-		}  
-	});
+
+		});
 });
