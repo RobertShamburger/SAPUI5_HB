@@ -1,3 +1,4 @@
 <mvc:View controllerName="de.sapui5buch.demo.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
     <Label text="Why?" />
+    <mvc:JSView viewName="de.sapui5buch.demo.view.JavaScriptView"/>
 </mvc:View>
