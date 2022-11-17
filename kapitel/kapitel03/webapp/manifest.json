@@ -1,0 +1,25 @@
+{
+    "_version": "1.107.0",
+    "sap.app": {
+        "id": "de.sapui5buch.demo",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitel}}",
+        "description": "{{appDescription}}"
+    },
+    "sap.ui": {
+        "technology": "UI5"
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.60.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        }
+    }
+}
