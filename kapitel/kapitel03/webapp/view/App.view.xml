@@ -1,4 +1,10 @@
 <mvc:View controllerName="de.sapui5buch.demo.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-    <Label text="Why?" />
-    <mvc:JSView viewName="de.sapui5buch.demo.view.JavaScriptView"/>
+    <FlexBox>
+        <Label text="Vorname" />
+        <Input value="{/vorname}" />
+        <Label text="Nachname" />
+        <Input value="{/nachname}" />
+    </FlexBox>
+    <Label text="Why {/vorname}? WHY?" />
+    <mvc:JSView viewName="de.sapui5buch.demo.view.JavaScriptView" />
 </mvc:View>
