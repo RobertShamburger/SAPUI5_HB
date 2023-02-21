@@ -1,30 +1,59 @@
 {
-    "_version": "1.108.0",
-    "sap.app": {
-        "id": "de.sapui5buch.demo",
-        "type": "application",
-        "i18n": "i18n/i18n.properties",
-        "applicationVersion": {
-            "version": "1.0.0"
-        },
-        "title": "{{appTitel}}",
-        "description": "{{appDescription}}"
+  "_version": "1.108.0",
+  "sap.app": {
+    "id": "de.sapui5buch.demo",
+    "type": "application",
+    "i18n": {
+      "bundleUrl": "i18n/i18n.properties",
+      "supportedLocales": [""],
+      "fallbackLocale": ""
     },
-    "sap.ui": {
-        "technology": "UI5"
+    "applicationVersion": {
+      "version": "1.0.0"
     },
-    "sap.ui5": {
-        "rootView": {
-            "viewName": "de.sapui5buch.demo.view.App",
-            "type": "XML",
-            "async": true
-        },
-        "dependencies": {
-            "minUI5Version": "1.60.0",
-            "libs": {
-                "sap.ui.core": {},
-                "sap.m": {}
-            }
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}"
+  },
+  "sap.ui": {
+    "technology": "UI5"
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "de.sapui5buch.demo.view.App",
+      "type": "XML",
+      "id": "app",
+      "async": true
+    },
+    "dependencies": {
+      "minUI5Version": "1.90.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "de.sapui5buch.demo.i18n.i18n",
+          "supportedLocales": ["", "de", "en"],
+          "fallbackLocale": ""
         }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "settings": {},
+        "uri": "./localService/BusinessPartnerSet.json",
+        "preload": true
+      }
+    },
+    "resources": {
+      "css": [{ "uri": "css/style.css" }]
     }
+  }
 }

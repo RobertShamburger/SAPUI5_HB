@@ -1,15 +1,90 @@
-<mvc:View controllerName="de.sapui5buch.demo.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" displayBlock="true">
-    <!--controllerName="de.sapui5buch.demo.controller.App"-->
+<mvc:View controllerName="de.sapui5buch.demo.controller.App" xmlns:mvc="sap.ui.core.mvc"
+    xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:uxap="sap.uxap"
+    xmlns="sap.m" displayBlock="true">
     <Shell id="shell">
         <App id="app">
             <pages>
-                <Page id="page" title="{i18n>title}">
-                    <content>
-                        <Label text="Sag Hallo zu" />
-                        <Input />
-                        <Button text="Sag Hallo" press="onPress" />
-                    </content>
-                </Page>
+                <uxap:ObjectPageLayout
+                    id="ObjectPageLayout"
+                    showHeaderContent="false"
+                    toggleHeaderOnTitleClick="false">
+                    <uxap:headerTitle>
+                        <uxap:ObjectPageDynamicHeaderTitle>
+                            <uxap:heading>
+                                <Input id="idInputField" width="20rem" placeholder="{i18n>bpId}"
+                                    suggestionItemSelected="onSuggestionItemSelected"
+                                    showSuggestion="true" suggest="onSuggest"
+                                    suggestionItems="{/d/results}">
+                                    <suggestionItems>
+                                        <core:Item text="{BusinessPartnerID} {CompanyName}" />
+                                    </suggestionItems>
+                                </Input>
+                            </uxap:heading>
+                        </uxap:ObjectPageDynamicHeaderTitle>
+                    </uxap:headerTitle>
+                    <uxap:headerContent>
+                        <FlexBox wrap="Wrap" fitContainer="true" id="headerContent">
+                            <VBox class="sapUiLargeMarginEnd">
+                                <HBox>
+                                    <Title text="{i18n>PartnerData}" />
+                                </HBox>
+                                <HBox>
+                                    <Label class="sapUiTinyMarginEnd" text="{i18n>CompanyName}:" />
+                                    <Text text="{CompanyName}" />
+                                </HBox>
+                                <HBox>
+                                    <Label class="sapUiTinyMarginEnd"
+                                        text="{i18n>BusinessPartnerID}:" />
+                                    <Text text="{BusinessPartnerID}" />
+                                </HBox>
+                                <HBox>
+                                    <Label class="sapUiTinyMarginEnd" text="{i18n>LegalForm}:" />
+                                    <Text text="{LegalForm}" />
+                                </HBox>
+                            </VBox>
+                            <VBox>
+                                <HBox>
+                                    <Title text="{i18n>Contact}" />
+                                </HBox>
+                                <HBox>
+                                    <Label class="sapUiTinyMarginEnd" text="{i18n>URL}:" />
+                                    <Text text="{WebAddress}" />
+                                </HBox>
+                                <HBox>
+                                    <Label class="sapUiTinyMarginEnd"
+                                        text="{i18n>EmailAddress}:" />
+                                    <Text text="{EmailAddress}" />
+                                </HBox>
+                                <HBox>
+                                    <Label class="sapUiTinyMarginEnd"
+                                        text="{i18n>PhoneNumber}:" />
+                                    <Text text="{PhoneNumber}" />
+                                </HBox>
+                            </VBox>
+                        </FlexBox>
+                    </uxap:headerContent>
+                    <uxap:sections>
+                        <uxap:ObjectPageSection title="Adresse"
+                            visible="false" id="addressSection">
+                            <uxap:subSections>
+                                <uxap:ObjectPageSubSection>
+                                    <VBox>
+                                        <HBox>
+                                            <Label class="sapUiTinyMarginEnd"
+                                                text="{i18n>Street}:" />
+                                            <Text text="{Street} {Building}" />
+                                        </HBox>
+                                        <HBox>
+                                            <Label class="sapUiTinyMarginEnd"
+                                                text="{i18n>CountryCodeCity}:" />
+                                            <Text text="{Country}/ {PostalCode}/ {City}" />
+                                        </HBox>
+                                    </VBox>
+                                </uxap:ObjectPageSubSection>
+                            </uxap:subSections>
+                        </uxap:ObjectPageSection>
+                    </uxap:sections>
+                </uxap:ObjectPageLayout>
             </pages>
         </App>
     </Shell>

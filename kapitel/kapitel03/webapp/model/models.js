@@ -5,6 +5,7 @@ sap.ui.define([
     return {
         createDataModel: function () {
             var oModel = new JSONModel("./model/data.json");
+            return oModel;
         }
     };
 });

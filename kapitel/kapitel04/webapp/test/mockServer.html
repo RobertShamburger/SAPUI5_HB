@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kapitel 04 - Das verlorene Kapitel</title>
+    <title>Mock Server</title>
     <script
       id="sap-ui-bootstrap"
       type="text/javascript"
-      src="./sap_ui_resources/1.108.1/resources/sap-ui-core.js"
+      src="../sap_ui_resources/1.108.1/resources/sap-ui-core.js"
       data-sap-ui-theme="sap_fiori_3"
-      data-sap-ui-libs="sap.m, sap.ui.table"
-      data-sap-ui-resourceroots='{"de.sapui5buch.demo": "./"}'
+      data-sap-ui-resourceroots='{"de.sapui5buch.demo": "../"}'
+      data-sap-ui-oninit="module:de/sapui5buch/demo/test/initMockServer"
       data-sap-ui-compatVersion="edge"
       data-sap-ui-async="true"
-      data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
-      data-sap-ui-frameOptions="trusted"
-    ></script>
+    >
+      alert("This actually happens");
+    </script>
   </head>
-
   <body class="sapUiBody">
     <div
       data-sap-ui-component

@@ -1,0 +1,54 @@
+{
+  "d": {
+    "results": [
+      {
+        "BusinessPartnerID": "001",
+        "CompanyName": "Ososoft",
+        "LegalForm": "GmbH",
+        "Address": {
+          "Street": "Geibelstraße",
+          "Building": "1",
+          "Country": "Deutschland",
+          "PostalCode": "97072",
+          "City": "Würzburg"
+        }
+      },
+      {
+        "BusinessPartnerID": "002",
+        "CompanyName": "Edeka",
+        "LegalForm": "GmbH",
+        "Address": {
+          "Street": "",
+          "Building": "",
+          "Country": "",
+          "PostalCode": "",
+          "City": ""
+        }
+      },
+      {
+        "BusinessPartnerID": "003",
+        "CompanyName": "Lidl",
+        "LegalForm": "GmbH",
+        "Address": {
+          "Street": "",
+          "Building": "",
+          "Country": "",
+          "PostalCode": "",
+          "City": ""
+        }
+      },
+      {
+        "BusinessPartnerID": "004",
+        "CompanyName": "Frische Orangen",
+        "LegalForm": "Stand",
+        "Address": {
+          "Street": "Randersacker Straße",
+          "Building": "¿",
+          "Country": "Deutschland",
+          "PostalCode": "97072",
+          "City": "Würzburg"
+        }
+      }
+    ]
+  }
+}
