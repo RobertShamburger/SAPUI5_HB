@@ -11,78 +11,16 @@
                     <uxap:headerTitle>
                         <uxap:ObjectPageDynamicHeaderTitle>
                             <uxap:heading>
-                                <Input id="idInputField" width="20rem" placeholder="{i18n>bpId}"
-                                    suggestionItemSelected="onSuggestionItemSelected"
-                                    showSuggestion="true" suggest="onSuggest"
-                                    suggestionItems="{/d/results}">
-                                    <suggestionItems>
-                                        <core:Item text="{BusinessPartnerID} {CompanyName}" />
-                                    </suggestionItems>
-                                </Input>
+                                <!-- fragment -->
+                                <core:Fragment fragmentName="de.sapui5buch.demo.view.Input" type="XML" />
                             </uxap:heading>
                         </uxap:ObjectPageDynamicHeaderTitle>
                     </uxap:headerTitle>
                     <uxap:headerContent>
-                        <FlexBox wrap="Wrap" fitContainer="true" id="headerContent">
-                            <VBox class="sapUiLargeMarginEnd">
-                                <HBox>
-                                    <Title text="{i18n>PartnerData}" />
-                                </HBox>
-                                <HBox>
-                                    <Label class="sapUiTinyMarginEnd" text="{i18n>CompanyName}:" />
-                                    <Text text="{CompanyName}" />
-                                </HBox>
-                                <HBox>
-                                    <Label class="sapUiTinyMarginEnd"
-                                        text="{i18n>BusinessPartnerID}:" />
-                                    <Text text="{BusinessPartnerID}" />
-                                </HBox>
-                                <HBox>
-                                    <Label class="sapUiTinyMarginEnd" text="{i18n>LegalForm}:" />
-                                    <Text text="{LegalForm}" />
-                                </HBox>
-                            </VBox>
-                            <VBox>
-                                <HBox>
-                                    <Title text="{i18n>Contact}" />
-                                </HBox>
-                                <HBox>
-                                    <Label class="sapUiTinyMarginEnd" text="{i18n>URL}:" />
-                                    <Text text="{WebAddress}" />
-                                </HBox>
-                                <HBox>
-                                    <Label class="sapUiTinyMarginEnd"
-                                        text="{i18n>EmailAddress}:" />
-                                    <Text text="{EmailAddress}" />
-                                </HBox>
-                                <HBox>
-                                    <Label class="sapUiTinyMarginEnd"
-                                        text="{i18n>PhoneNumber}:" />
-                                    <Text text="{PhoneNumber}" />
-                                </HBox>
-                            </VBox>
-                        </FlexBox>
+                        <core:Fragment fragmentName="de.sapui5buch.demo.view.Header" type="XML" />
                     </uxap:headerContent>
                     <uxap:sections>
-                        <uxap:ObjectPageSection title="Adresse"
-                            visible="false" id="addressSection">
-                            <uxap:subSections>
-                                <uxap:ObjectPageSubSection>
-                                    <VBox>
-                                        <HBox>
-                                            <Label class="sapUiTinyMarginEnd"
-                                                text="{i18n>Street}:" />
-                                            <Text text="{Street} {Building}" />
-                                        </HBox>
-                                        <HBox>
-                                            <Label class="sapUiTinyMarginEnd"
-                                                text="{i18n>CountryCodeCity}:" />
-                                            <Text text="{Country}/ {PostalCode}/ {City}" />
-                                        </HBox>
-                                    </VBox>
-                                </uxap:ObjectPageSubSection>
-                            </uxap:subSections>
-                        </uxap:ObjectPageSection>
+                        <core:Fragment fragmentName="de.sapui5buch.demo.view.Address" type="XML" />
                     </uxap:sections>
                 </uxap:ObjectPageLayout>
             </pages>
