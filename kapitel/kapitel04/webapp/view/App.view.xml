@@ -20,7 +20,7 @@
                         <core:Fragment fragmentName="de.sapui5buch.demo.view.Header" type="XML" />
                     </uxap:headerContent>
                     <uxap:sections>
-                        <core:Fragment fragmentName="de.sapui5buch.demo.view.Address" type="XML" />
+                        <core:Fragment fragmentName="de.sapui5buch.demo.view.AddressSection" type="XML" />
                     </uxap:sections>
                 </uxap:ObjectPageLayout>
             </pages>
