@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mock Server</title>
+    <script
+      id="sap-ui-bootstrap"
+      type="text/javascript"
+      src="../sap_ui_resources/1.108.1/resources/sap-ui-core.js"
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-resourceroots='{"de.sapui5buch.demo": "../"}'
+      data-sap-ui-oninit="module:de/sapui5buch/demo/test/initMockServer"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-async="true"
+    >
+      alert("This actually happens");
+    </script>
+  </head>
+  <body class="sapUiBody">
+    <div
+      data-sap-ui-component
+      data-name="de.sapui5buch.demo"
+      data-id="container"
+      data-settings='{"id" : "demo"}'
+    ></div>
+  </body>
+</html>

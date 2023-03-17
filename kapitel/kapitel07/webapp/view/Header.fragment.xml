@@ -1,0 +1,47 @@
+<core:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <layout:ResponsiveFlowLayout id="headerContent">
+        <layout:VerticalLayout width="100%">
+            <HBox>
+                <Title text="{i18n>PartnerData}" />
+            </HBox>
+            <HBox>
+                <Label class="sapUiTinyMarginEnd" text="{i18n>CompanyName}:" />
+                <Text text="{CompanyName}" />
+            </HBox>
+            <HBox>
+                <Label class="sapUiTinyMarginEnd"
+                    text="{i18n>BusinessPartnerID}:" />
+                <Text text="{BusinessPartnerID}" />
+            </HBox>
+            <HBox>
+                <Label class="sapUiTinyMarginEnd" text="{i18n>LegalForm}:" />
+                <Text text="{LegalForm}" />
+            </HBox>
+            <layout:layoutData>
+                <layout:ResponsiveFlowLayoutData minWidth="250" />
+            </layout:layoutData>
+        </layout:VerticalLayout>
+        <layout:VerticalLayout width="100%">
+            <HBox>
+                <Title text="{i18n>Contact}" />
+            </HBox>
+            <HBox>
+                <Label class="sapUiTinyMarginEnd" text="{i18n>URL}:" />
+                <Text text="{WebAddress}" />
+            </HBox>
+            <HBox>
+                <Label class="sapUiTinyMarginEnd"
+                    text="{i18n>EmailAddress}:" />
+                <Text text="{EmailAddress}" />
+            </HBox>
+            <HBox>
+                <Label class="sapUiTinyMarginEnd"
+                    text="{i18n>PhoneNumber}:" />
+                <Text text="{PhoneNumber}" />
+            </HBox>
+            <layout:layoutData>
+                <layout:ResponsiveFlowLayoutData minWidth="250" />
+            </layout:layoutData>
+        </layout:VerticalLayout>
+    </layout:ResponsiveFlowLayout>
+</core:FragmentDefinition>

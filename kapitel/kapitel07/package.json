@@ -1,0 +1,20 @@
+{
+  "name": "kapitel04",
+  "version": "1.0.0",
+  "description": "SAPUI5 Handbuch Kapitel 4",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3.0.3",
+    "ui5-middleware-livereload": "^0.8.1",
+    "ui5-middleware-simpleproxy": "^0.9.4"
+  },
+  "ui5": {
+    "dependencies": [
+      "ui5-middleware-livereload",
+      "ui5-middleware-simpleproxy"
+    ]
+  }
+}
