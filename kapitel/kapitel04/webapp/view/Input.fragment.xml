@@ -2,7 +2,9 @@
     <Input id="idInputField" width="20rem" placeholder="{i18n>bpId}"
         suggestionItemSelected="onSuggestionItemSelected"
         showSuggestion="true" suggest="onSuggest"
-        suggestionItems="{/d/results}">
+        suggestionItems="{/d/results}"
+        showValueHelp="true"
+        valueHelpRequest="onValueHelpRequest">
         <suggestionItems>
             <core:Item text="{BusinessPartnerID} {CompanyName}" />
         </suggestionItems>
